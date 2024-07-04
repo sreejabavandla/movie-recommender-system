@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import requests
 def fetch_poster(movie_id):
-    api_key = 'ca7ec1ceafd833b0764ecd453c7092f2'
+    api_key = '#'
     response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}')
     data = response.json()
     return "https://image.tmdb.org/t/p/w500/" + data["poster_path"]
